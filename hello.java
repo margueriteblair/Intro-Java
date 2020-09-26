@@ -3,20 +3,13 @@ public class MySweetProgram {
 //we named our class MySweetPrgraom
 //method is main()
 //every program at some point needs  a main method
-    public static void main(String[], args) {
-        System.out.println('Hello there!');
+    public static void main(String[] args) {
+        System.out.println("Hello there!");
         //system class
         //one member is called out
         //members can be properties or methods, like in a js class
     }
 
-    String x = new String("hello")
-    var y - new MySweetProgram()
-    y.tacos()
-
-    public void tacos() {
-        System.out.println('Hello there tacos!')
-    }
 }
 
 //all executable java code needs to have a public method called main
