@@ -2,13 +2,12 @@ import java.util.Scanner;
 
 public class MyProgram {
     public static void main(String[] args) {
-        String string = new String("This is a string!");
+        int x = 5; //type int 
+        //first we declare a variable, then we initialize a variable
+        int y;
+        y = 5; //you can break it into separate pieces
 
-        String easier = "Wow, that was easy! " + string;
-        System.out.println(easier);
-
-        int x = 5; //this is a primitive
-        Integer y = 5; //this one is an object instance
+        public static final double PI = 3.1459;
     }
 }
 
