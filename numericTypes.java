@@ -5,6 +5,7 @@ public class MySweetProgram {
         //the integer class has a lot of methods attached to it
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Double.MAX_VALUE); //double.infinity
+        
 
     }
 }
