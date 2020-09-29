@@ -7,6 +7,8 @@ public class stringmethods {
         System.out.println(fullAd);
         System.out.println(fullAd.contains("chicken")); //returns a boolean
         System.out.println(fullAd.indexOf("pot"));
-
+        System.out.println(fullAd.toUpperCase());
+        System.out.println(fullAd.substring(9, 20));
+        System.out.println(fullAd.repeat(3));
     }
 }
