@@ -7,5 +7,11 @@ public class ArraysD {
         System.out.println(grades[1][1]);
 
         System.out.println(Arrays.deepToString(grades));
+
+        for (int i = 0; i < grades.length; i++) {
+            for(int k = 0; k < grades[i].length; k++) {
+                System.out.println(grades[i][k]);
+            }
+        }
     }
 }
