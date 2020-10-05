@@ -19,6 +19,10 @@ public class arrayList {
             grades.set(i, grades.get(i)*2);
             System.out.println((grades.get(i)));
         }
+
+        for (int grade : grades) {
+            System.out.println(grade);
+        }
     
     }
 }
