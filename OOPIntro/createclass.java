@@ -5,6 +5,6 @@ public class createclass {
         user.firstName = "Margie";
         user.lastName = "Blair";
 
-        user.output();
+        user.output(6);
     }
 }
