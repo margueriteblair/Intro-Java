@@ -7,4 +7,8 @@ public class User {
     public String getFirstName() {
         return firstName.toUpperCase();
     }
+
+    public void setFirstName(String fn) {
+        firstName = fn;
+    }
 }
