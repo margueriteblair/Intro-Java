@@ -1,5 +1,5 @@
 
-public class GenericList<T extends Comparable & Cloneable> {
+public class GenericList<T> {
     //T extends Number means that T will only be able to support
     //children of the Number class, in wrapper form of course
     //this assumes we'll make some methods that are only applicable for numbers
