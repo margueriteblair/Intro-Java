@@ -2,9 +2,15 @@ package collections;
 
 public class Customer implements Comparable<Customer> {
     private String name;
+    private String email;
 
-    public Customer(String name) {
+    public Customer(String name, email) {
         this.name = name;
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     @Override
