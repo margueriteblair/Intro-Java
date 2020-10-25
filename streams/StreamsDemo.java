@@ -14,14 +14,9 @@ public class StreamsDemo {
 
         );
 
-        var result = movies.stream()
-        .anyMatch(m -> m.getLikes() > 20);
-
-        var result2 = movies.stream()
-        .allMatch(m -> m.getLikes() > 20);
-        //returns a boolean if the condition is met or not
-
-       
+        var accum = movies.stream()
+        .map(m -> m.getLikes())
+        .reduce((a, b) -> a + b);
 
     }
 
