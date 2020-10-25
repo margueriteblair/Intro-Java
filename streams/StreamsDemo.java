@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class StreamsDemo {
     public static void show() {
@@ -10,12 +11,14 @@ public class StreamsDemo {
             new Movie("c", 20)
         );
 
-        var countLikedMovies = movies.stream()
-        .filter(movie -> movie.getLikes() > 15)
-        .count();
+        movies.stream()
+        .map(movie -> movie.getTitle()) //map is good for changing each var without ending the stream
+        .forEach(name -> System.out.println(name));
 
-        System.out.println(countLikedMovies);
-    
+        var stream = Stream.of(List.of(1, 2, 3), List.of(4, 5, 6));
+        stream.flatMap(list -> list.stream())
+        .forEach(n -> System.out.println(n));
+        //flattened a stream of objects
     }
 
 
