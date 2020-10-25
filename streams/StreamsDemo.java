@@ -12,13 +12,15 @@ public class StreamsDemo {
         );
 
         movies.stream()
-        .map(movie -> movie.getTitle()) //map is good for changing each var without ending the stream
-        .forEach(name -> System.out.println(name));
+        .filter(movie -> movie.getLikes() > 10) 
+        .forEach(m -> System.out.println(m.getTitle()));
 
         var stream = Stream.of(List.of(1, 2, 3), List.of(4, 5, 6));
         stream.flatMap(list -> list.stream())
         .forEach(n -> System.out.println(n));
         //flattened a stream of objects
+
+
     }
 
 
