@@ -10,14 +10,16 @@ public class StreamsDemo {
             new Movie("b", 10),
             new Movie("a", 15),
             new Movie("c", 20),
-            new Movie("c", 10)
+            new Movie("c", 30)
 
         );
 
-        movies.stream()
-        .map(Movie::getLikes)
-        .distinct()
-        .forEach(System.out::println);
+        var result = movies.stream()
+        .anyMatch(m -> m.getLikes() > 20);
+
+        var result2 = movies.stream()
+        .allMatch(m -> m.getLikes() > 20);
+        //returns a boolean if the condition is met or not
 
        
 
