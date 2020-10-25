@@ -9,13 +9,17 @@ public class StreamsDemo {
         List<Movie> movies = List.of(
             new Movie("b", 10),
             new Movie("a", 15),
-            new Movie("c", 20)
+            new Movie("c", 20),
+            new Movie("c", 10)
+
         );
 
-       movies.stream()
-       .sorted((a, b) -> a.getTitle().compareTo(b.getTitle()))
-       .sorted(Comparator.comparing(Movie::getTitle))
-       .forEach(m -> System.out.println(m));
+        movies.stream()
+        .map(Movie::getLikes)
+        .distinct()
+        .forEach(System.out::println);
+
+       
 
     }
 
