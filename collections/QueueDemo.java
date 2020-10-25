@@ -1,5 +1,12 @@
 package collections;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+//maps or hashmaps
+//objects in javascript are actually hashtables
+//objects in js are represented as hashtables under the hood
+
 public class QueueDemo {
     public static void show() {
         Queue<String> queue = new ArrayDeque<>();
