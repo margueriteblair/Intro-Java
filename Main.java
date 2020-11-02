@@ -3,6 +3,8 @@ public class Main {
         
         ByTwos byTwos = new ByTwos();
 
+        ByThrees byThrees = new ByThrees();
+
         Series ob;
 
         for (int i = 0; i < 5; i++) {
