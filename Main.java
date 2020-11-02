@@ -3,8 +3,14 @@ public class Main {
         
         ByTwos byTwos = new ByTwos();
 
+        Series ob;
+
         for (int i = 0; i < 5; i++) {
-            System.out.println(byTwos.getNext());
+            ob = byTwos;
+            System.out.println(ob.getNext());
+
+            ob = byThrees;
+            System.out.println(ob.getNext());
         }
     }
 }
